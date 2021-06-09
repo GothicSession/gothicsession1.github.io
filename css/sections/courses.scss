@@ -1,0 +1,50 @@
+.courses{
+	background: url('../img/bg/pattern.png');
+}
+.courses__list{
+	@extend %clearfix;
+}
+.courses__link{
+	display:block;
+}
+.courses__item{
+	@include box-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+	float:left;
+	@extend %clearfix;
+	width:33.3%;
+		margin-bottom:rem(70px);
+	&:hover{
+	.courses__img{
+		 box-shadow: 0px -20px 0px $green inset;
+	}
+}
+}
+.courses__title{
+	font-size: rem(21px);
+	color:$green;
+	padding: rem(20px);
+}
+.courses__link{
+	text-decoration: none;
+	outline: none;
+	padding:0 rem(10px);
+}
+.courses__check-text{
+	@include fira(light);
+	color: #b6b6b6;
+	font-size: rem(14px);
+}
+.courses__img-pic{
+	display: block;
+	max-width: 100%;
+}
+.courses__check{
+	height: rem(60px);
+	background: #f6f7f2;
+}
+.courses__desc{
+	background: white;
+}
+.courses__text-content{
+		padding:0 rem(20px);
+}
